@@ -1,6 +1,8 @@
+import { Container } from "./styles";
+
 export function App() {
   return (
-    <div>
+    <Container>
       <header>Header</header>
 
       <main>
@@ -8,6 +10,6 @@ export function App() {
       </main>
 
       <footer>Footer</footer>
-    </div>
+    </Container>
   );
 }
