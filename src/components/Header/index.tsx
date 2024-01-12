@@ -18,22 +18,14 @@ export function Header() {
   } = useForm<Input>();
 
   const onSubmit: SubmitHandler<Input> = (data) => {
-<<<<<<< HEAD
     navigate(`/search?q=${data.inputSearch}`);
-=======
-    navigate(`/search?q=${data.inputSearch}`)
->>>>>>> d60376b7e18ab040875416a39c3ae3856ca9e754
     reset();
   };
 
   return (
     <Container>
       <Link to={"/"}>
-<<<<<<< HEAD
         <img src={pokemonLogo} alt="logo com texto pokemon" />
-=======
-        <img src={pokemonLogo} alt="Logo com texto pokemon" />
->>>>>>> d60376b7e18ab040875416a39c3ae3856ca9e754
       </Link>
 
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -41,10 +33,6 @@ export function Header() {
           <label htmlFor="inputSearch" className="srOnly">
             Pesquisar Pokémon
           </label>
-<<<<<<< HEAD
-
-=======
->>>>>>> d60376b7e18ab040875416a39c3ae3856ca9e754
           <input
             type="text"
             id="inputSearch"
